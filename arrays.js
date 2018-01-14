@@ -14,12 +14,12 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 
 function addElementToEndOfArray(array, element)
 {
-  var newestArray = [element, ...array];
+  var newestArray = [...array, element];
   return newestArray; 
 }
 
 function destructivelyAddElementToEndOfArray(array, element)
 {
-  array.unshift(element);
+  array.push(element);
   return array;
 }
