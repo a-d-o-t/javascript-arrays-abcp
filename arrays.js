@@ -6,8 +6,8 @@ function addElementToBeginningOfArray(array, element) {
   return array;
 }
 
-function destructivelyAddElementToBeginningOfArray(newArray, addedElement) {
+function destructivelyAddElementToBeginningOfArray(array, element) {
   //var newArray = ["amanda", "matt", "jeremy"];
-  var newestArray = [addedElement, ...newArray];
+  var newestArray = [addedElement, ...array];
   return newestArray;
 }
